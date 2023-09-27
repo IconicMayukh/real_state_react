@@ -112,7 +112,7 @@ export default function Listing() {
             {listings.description}
           </p>
 
-          <ul className='flex justify-between items-center mb-6'>
+          <ul className='flex justify-between items-center mb-6 xs:grid xs:grid-cols-2 sm:grid sm:grid-cols-4'>
             <li className='flex items-center whitespace-nowrap'><FaBed className="mr-1" />{+listings.bedrooms > 1 ? `${listings.bedrooms} beds` : "1 Bed"}</li>
 
             <li className='flex items-center whitespace-nowrap'><FaBath className="mr-1" />{+listings.bedrooms > 1 ? `${listings.bathrooms} baths` : "1 Bath"}</li>

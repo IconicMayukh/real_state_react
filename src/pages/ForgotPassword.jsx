@@ -39,7 +39,7 @@ const ForgotPassword = () => {
           <form onSubmit={onSubmit} className='flex flex-col gap-5'>
             <input type="email" name="email" id="email" className='w-full rounded-md border border-gray-400 bg-white px-6 py-2 text-lg text-gray-700 placeholder:text-gray-400' value={email} onChange={changeEmail} placeholder='Email address' />
 
-            <div className='flex justify-between whitespace-nowrap sm:text-base lg:text-sm'>
+            <div className='flex justify-between whitespace-nowrap sm:text-base lg:text-sm xs:flex-col gap-2'>
               <p>Don't have an account?
                 <Link to={"/sign-up"} className='text-red-600 hover:text-red-700 pl-1.5'>Register</Link>
               </p>

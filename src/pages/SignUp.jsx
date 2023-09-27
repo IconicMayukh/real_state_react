@@ -81,7 +81,7 @@ const SignUp = () => {
               {showPassword ? <AiFillEyeInvisible className='absolute right-4 top-[13.5px] text-xl cursor-pointer' onClick={() => setShowPassword((prevState) => !prevState)} /> : <AiFillEye className='absolute right-4 top-[13.5px] text-xl cursor-pointer' onClick={() => setShowPassword((prevState) => !prevState)} />}
             </div>
 
-            <div className='flex justify-between mt-4 whitespace-nowrap sm:text-base lg:text-sm'>
+            <div className='flex justify-between mt-4 whitespace-nowrap sm:text-base lg:text-sm xs:flex-col gap-2'>
               <p>Already have an account?
                 <Link to={"/sign-in"} className='text-red-600 hover:text-red-700 pl-1.5'>Sign in</Link>
               </p>

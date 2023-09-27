@@ -4,7 +4,7 @@ import { FaInstagram , FaFacebook , FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='bg-gray-800 grid grid-cols-3 relative bottom-0'>
+    <div className='bg-gray-800 grid grid-cols-3 relative bottom-0 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1'>
       <div className='col-span-1 relative w-full h-full'>
         <img src={'https://i.pinimg.com/originals/fd/b1/63/fdb1630049dc534f5da136cd77e5ffa8.jpg'} fill="true" alt='' style={{objectFit: 'cover'}} className='w-full h-full'/>
       </div>
@@ -12,7 +12,7 @@ const Footer = () => {
       <div className='bg-gray-800 col-span-2 pt-5 gap-3.5 px-5 text-white pb-4'>
         {/* moto */}
         <div className='uppercase my-4 text-center' style={{fontFamily: 'Varela Round , sans-serif'}}>
-          <h2 className='font-bold text-2xl'>Rosewood_estates.com - FIND YOUR DREAM PROPERTY HERE</h2>
+          <h2 className='font-bold text-2xl'>Rosewood-estates.com - FIND YOUR DREAM PROPERTY HERE</h2>
           <h2 className='mt-1 font-semibold'>One place to find best properties where-ever you want !</h2>
         </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
             {/* working hour */}
             <div>
             <h1 className='text-lg mb-3 font-semibold text-orange-300 uppercase'>Get your dream properties in</h1>
-            <ul className='grid grid-cols-3'>
+            <ul className='grid grid-cols-3 xs:grid-cols-2 sm:grid-cols-2'>
                 <li>Mumbai</li>
                 <li>Delhi</li>
                 <li>Bangalore</li>

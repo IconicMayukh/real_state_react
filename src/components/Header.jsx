@@ -24,7 +24,7 @@ const Header = () => {
 
     return (
         <div className='bg-white border-b shadow-sm sticky top-0 z-50'>
-            <header className='flex justify-between items-center px-3 max-w-6xl mx-auto pt-2'>
+            <header className='flex justify-between items-center px-3 max-w-6xl mx-auto pt-2  xs:flex-col'>
                 <div>
                     <img src={logo} alt="rosewood_estate.com" className='h-14 cursor-pointer' 
                     onClick={()=> navigate('/')}/>
