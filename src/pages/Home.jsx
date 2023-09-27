@@ -87,14 +87,14 @@ const Home = () => {
   return (
     <>
       <SliderHome></SliderHome>
-      <div className='max-w-[90%] mx-auto pt-4 space-y-6'>
+      <div className='max-w-[90%] mx-auto pt-4 space-y-6 grid'>
         {offerListing && offerListing.length > 0 && (
           <div className='mb-6'>
             <h2 className='px-3 text-2xl mt-6 font-semibold'>Recent Offers</h2>
             <Link to={"/offers"}>
               <p className='px-3 text-sm text-blue-600 hover:text-blue-800 transition duration-150 ease-in-out hover:underline cursor-pointer'>Show more offers</p>
             </Link>
-            <ul className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
+            <ul className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-3'>
               {offerListing.map((listing)=>(
                 <ListingItem key={listing.id} listing={listing.data} id={listing.id}></ListingItem>
               ))}
@@ -111,7 +111,7 @@ const Home = () => {
             <Link to={"/category/rent"}>
               <p className='px-3 text-sm text-blue-600 hover:text-blue-800 transition duration-150 ease-in-out hover:underline cursor-pointer'>Show more properties for rent</p>
             </Link>
-            <ul className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
+            <ul className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-3'>
               {rentListings.map((listing)=>(
                 <ListingItem key={listing.id} listing={listing.data} id={listing.id}></ListingItem>
               ))}
@@ -128,7 +128,7 @@ const Home = () => {
             <Link to={"/category/sale"}>
               <p className='px-3 text-sm text-blue-600 hover:text-blue-800 transition duration-150 ease-in-out hover:underline cursor-pointer'>Show more properties for sale</p>
             </Link>
-            <ul className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
+            <ul className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-3'>
               {saleListings.map((listing)=>(
                 <ListingItem key={listing.id} listing={listing.data} id={listing.id}></ListingItem>
               ))}

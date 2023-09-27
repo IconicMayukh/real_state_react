@@ -82,7 +82,7 @@ const Category = () => {
             {/* <Link to={"/category/sale"}>
               <p className='px-3 text-sm text-blue-600 hover:text-blue-800 transition duration-150 ease-in-out hover:underline cursor-pointer'>Show more properties for sale</p>
             </Link> */}
-            <ul className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
+            <ul className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-3'>
               {listings.map((listing)=>(
                 <ListingItem key={listing.id} listing={listing.data} id={listing.id}></ListingItem>
               ))}
