@@ -5,14 +5,16 @@ import { getFirestore } from "firebase/firestore"
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+//the .env file variables must contain REACT_APP_ in begenning to import like this(process.env.)----> must remember
 const firebaseConfig = {
-  apiKey: "AIzaSyAsOGEtf415MrgLEqVX6tOc5qkyhcy3JO4",
-  authDomain: "react-realstate-firebase.firebaseapp.com",
-  projectId: "react-realstate-firebase",
-  storageBucket: "react-realstate-firebase.appspot.com",
-  messagingSenderId: "435175084104",
-  appId: "1:435175084104:web:40482eba566264f8b4487d"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId
 };
+console.log(process.env)
 
 // Initialize Firebase
 initializeApp(firebaseConfig);

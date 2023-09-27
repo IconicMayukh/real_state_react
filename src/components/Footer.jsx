@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='bg-gray-800 grid grid-cols-3 relative bottom-0'>
       <div className='col-span-1 relative w-full h-full'>
-        <img src={'https://i.pinimg.com/originals/fd/b1/63/fdb1630049dc534f5da136cd77e5ffa8.jpg'} fill alt='' style={{objectFit: 'cover'}} className='w-full h-full'/>
+        <img src={'https://i.pinimg.com/originals/fd/b1/63/fdb1630049dc534f5da136cd77e5ffa8.jpg'} fill="true" alt='' style={{objectFit: 'cover'}} className='w-full h-full'/>
       </div>
 
       <div className='bg-gray-800 col-span-2 pt-5 gap-3.5 px-5 text-white pb-4'>

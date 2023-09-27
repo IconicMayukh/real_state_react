@@ -82,7 +82,7 @@ export default function Listing() {
 
         ))}
       </Swiper>
-      <div className='fixed top-[13%] right-[3%] z-10 bg-white cursor-pointer border-2 border-gray-400 rounded-full w-10 h-10 flex justify-center items-center' onClick={() => {
+      <div className='fixed top-[13%] right-[3%] z-20 bg-white cursor-pointer border-2 border-gray-400 rounded-full w-10 h-10 flex justify-center items-center' onClick={() => {
         navigator.clipboard.writeText(window.location.href)
         toast.success("link copied to clipboard!")
       }}>
